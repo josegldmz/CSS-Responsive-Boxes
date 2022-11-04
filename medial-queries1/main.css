@@ -10,40 +10,48 @@ body {
  
 .container {
   display: flex;
-  flex-wrap: wrap;
+  background-color: gray;
+  height: 100vh;
   flex-direction: row;
-  min-height: 900px;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .a {
-  flex-grow: 1;
   width: 100%;
+  height: 40vh;
+  background: red;
   margin: 10px;
+  flex-grow: 1;
 }
 
 .b {
-  flex-grow: 1;
-  width: 80%;
+  width: 100px;
+  height: 50vh;
+  background: red;
   margin: 10px;
+  flex:2;
 }
 
 .c {
-  flex-grow: 1;
+  width: 100px;
+  height: 50vh;
+  background: red;
   margin: 10px;
+  flex: 1;
 }
 
-@media (min-width: 600px) {
+@media (min-width:600px) {
   .container {
     flex-direction: row;
     flex-wrap: wrap;
   }
 
   .b {
-    max-width: 100%;
+    max-width: 60%;
   }
 
   .a, .c {
-    max-width: 100%
+    width:100%;
   }
 }

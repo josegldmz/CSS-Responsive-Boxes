@@ -1,19 +1,60 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  border: 3px black solid;
 }
 
 body {
   background: papayawhip;
+  margin: 0;
+  text-align: center;
 }
 
 .container {
-
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+  align-content: flex-start;
 }
 
+
 .a {
-  width: 100px;
-  height: 100px;
-  background: red;
+  margin: 10px;
+  height: 30vh;
+  width: 100%;
+}
+
+.container-box {
+  border: red solid 3px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.b {
+  height: 50px;
+  margin: 10px;
+  flex: 1;
+}
+
+.c {
+    height: 50px;
+    margin: 10px;
+    flex: 1;
+}
+
+.d {
+  height: 50px;
+  margin: 10px;
+  flex: 1;
+}
+
+.e {
+  height: 50px;
+  margin: 10px;
+  flex: 1;
+}
+
+.f {
+  height: 60vh;
+  margin: 10px;
+  flex: 1;
 }
